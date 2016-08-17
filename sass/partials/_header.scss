@@ -1,0 +1,76 @@
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	padding: 0;
+	margin: 0;
+
+	.utility {
+		background: $primary-color;
+		padding: 10px 0;
+
+		.phone {
+			color: $white;
+			font-weight: $font-weight--bold;
+			float: right;
+			line-height: 1.5;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				background: url(../images/icons/phone-white.svg) no-repeat 0 0;
+				width: 40px;
+				height: 20px;
+				float: left;
+			}
+		}
+	}
+
+	.primary {
+		background: rgba($white,.9);
+
+		.logo {
+			float: left;
+			width: 130px;
+			padding: 18px 0;
+
+			a {
+				display: block;
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+
+		nav {
+			float: right;
+
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li {
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+
+					a {
+						color: $grey;
+						text-transform: uppercase;
+						font-weight: $font-weight--bold;
+						padding: 20px;
+						display: block;
+
+						&:last-child {
+							padding-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

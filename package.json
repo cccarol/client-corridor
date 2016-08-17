@@ -1,0 +1,14 @@
+{
+  "name": "foundation",
+  "version": "1.0.0",
+  "description": "Gulp, Sass, and Livereload Website Starter",
+  "author": "carol@creationchamber.com",
+  "license": "proprietary",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^2.3.2"
+  }
+}

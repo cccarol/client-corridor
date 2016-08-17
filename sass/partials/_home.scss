@@ -1,0 +1,231 @@
+.hero {
+	height: 100%;
+	width: 100%;
+	background: url(../images/content/home-1.jpg) fixed center center;
+	background-size: cover;
+	position: relative; 
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($black, .25);
+
+	}
+
+	.hero-content {
+		@include vertical-align();
+		max-width: 520px;
+		margin: 0 auto;
+
+		h1, p, a {
+			color: $white;
+			text-align: center;
+		}
+
+		h1 {
+			text-transform: uppercase;
+			color: $white;
+			font-size: 36px;
+			line-height: 1.1;
+		}
+
+		
+	}
+
+	.next-section {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+
+		.title {
+			background: rgba($primary-color, .9);
+			padding: 10px 20px;;
+			display: inline-block;
+			font-size: 16px;
+			font-weight: $font-weight--medium; 
+			text-transform: uppercase;
+			color: $white;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+			line-height: 2;
+
+			span {
+				display: block;
+
+				&:before,
+				&:after {
+					content: '';
+					display: block;
+					width: 4px;
+    				height: 30px;
+    				padding: 0 10px;
+
+				}
+
+				&:before {
+					float: left;
+					background: url(../images/icons/bolts-white.svg) no-repeat 0 center;
+				}
+
+				&:after {
+					float: right;
+					background: url(../images/icons/bolts-white.svg) no-repeat right center;
+				}
+			}
+		}
+
+		.arrow {
+			width: 100%;
+			padding: 0 0 30px;
+			display: block;
+			background: rgba($primary-color, .9) url(../images/icons/arrow-dots-down.svg) no-repeat center center;
+			background-size: 60px;
+			text-indent: -99999px;
+
+		}
+	}
+}
+
+.block-map {
+	min-height: 100%;
+}
+
+.block-services {
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		height: 370px;
+		width: 100%;
+		top: 100px;
+		position: absolute;
+		background: url(../images/texture/grid-grey.png) repeat;
+
+	}
+
+	.service-item {
+		padding: 30px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba($black, .10);
+
+		}
+
+
+		&:after {
+			content: '';
+			position: absolute; 
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50%;
+			background: rgba($primary-color, .9);
+
+		}
+
+		&.service-student-housing {
+			background: url(../images/content/cta-student-housing.jpg) center center;
+			background-size: cover;
+		}
+
+		&.service-apartments {
+			background: url(../images/content/cta-apartments.jpg) center center;
+			background-size: cover;
+		}
+
+		.content {
+			border: solid $white 10px;
+			padding: 10px 30px;
+			position: relative;
+			z-index: 2;
+		}
+
+		h3, p, a {
+			color: $white;
+			margin: 0 0 10px;
+		}
+
+		a {
+			font-weight: $font-weight--medium;
+			font-size: 12px;
+		}
+
+		h3 {
+			line-height: 1;
+			padding: 20px 0;
+
+			span {
+				font-size: 57px;
+				display: block;
+			}
+		}
+
+	}
+
+	.service-list {
+		background: $secondary-color;
+		width: 100%;
+		padding: 40px 0; 
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+
+		h2, h3, p, a {
+			color: $white;
+		}
+
+		h2 {
+			text-align: center;
+			font-size: 40px;
+			font-weight: $font-weight--light;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+		}
+
+		h3 {
+			font-weight: $font-weight--medium;
+			line-height: 1;
+			text-transform: uppercase;
+		}
+
+		.icon {
+			img {
+				width: 55px;
+				float: left;
+			}
+		}
+
+		.content {
+			float: right;
+			width: calc(100% - 75px);
+		}
+	}
+}
+
+.block-map {
+	.map-search {
+		width: 305px;
+		box-shadow: 0 0 10px $black;
+		padding: 20px;
+		background: $white;
+	}
+}
+
+
+ 
