@@ -9,12 +9,16 @@ header {
 	.utility {
 		background: $primary-color;
 		padding: 10px 0;
+		@media screen and (max-width: $break-tablet) {
+			display: none;
+		}
 
 		.phone {
 			color: $white;
 			font-weight: $font-weight--bold;
 			float: right;
 			line-height: 1.5;
+			font-family: $font-family--secondary;
 
 			&:before {
 				content: '';
@@ -47,6 +51,9 @@ header {
 
 		nav {
 			float: right;
+			@media screen and (max-width: $break-tablet) {
+				display: none;
+			}
 
 			ul {
 				margin: 0;
@@ -62,13 +69,64 @@ header {
 						color: $grey;
 						text-transform: uppercase;
 						font-weight: $font-weight--bold;
-						padding: 20px;
+						padding: 20px 30px;
 						display: block;
+						font-family: $font-family--secondary;
+
+						&:hover {
+							color: $primary-color;
+						}
 
 						&:last-child {
 							padding-right: 0;
 						}
 					}
+				}
+			}
+
+			&.open {
+				display: block;
+				float: none;
+				clear: both;
+
+				ul {
+					li {
+						display: block;
+
+						a {
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.menu {
+		float: right;
+		display: none;
+		
+		@media screen and (max-width: $break-tablet) {
+			display: block;
+		}
+
+		a {
+			span {
+				width: 60px;
+				height: 60px;
+				display: block;
+
+				&:before  {
+					content: "";
+					position: absolute;
+					right: 20px;
+					top: 20px;
+					width: 20px;
+					height: 0.15em;
+					background: $primary-color;
+					box-shadow: 
+					0 20px 0 0 $primary-color,
+					0 10px 0 0 $primary-color;
 				}
 			}
 		}

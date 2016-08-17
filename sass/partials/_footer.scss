@@ -11,6 +11,9 @@ footer {
 			top: 35px;
 			background: lighten($grey, 45%);
 			position: absolute;
+			@media screen and (max-width: $break-tablet) {
+				display: none;
+			}
 
 		}
 	}
@@ -20,10 +23,17 @@ footer {
 
 		.logo {
 			margin: 120px 0 0;
+			@media screen and (max-width: $break-tablet) {
+				width: 190px;
+				margin: 20px 0;
+			}
 		}
 
 		h4 {
 			margin-bottom: 40px;
+			@media screen and (max-width: $break-tablet) {
+				margin: 20px 0;
+			}
 		}
 
 		a {
@@ -92,6 +102,10 @@ footer {
 			font-size: 9px;
 			text-transform: uppercase;
 			color: $primary-color;
+			@media screen and (max-width: $break-phone) {
+				float: none;
+				text-align: center;
+			}
 		}
 
 		a {
@@ -105,6 +119,10 @@ footer {
 
 		.icons {
 			float: right;
+			@media screen and (max-width: $break-phone) {
+				float: none;
+				text-align: center;
+			}
 
 			img {
 				display: inline-block;

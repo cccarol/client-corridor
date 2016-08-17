@@ -33,6 +33,8 @@
         <![endif]-->
 
         <header>
+
+            
             <div class="utility">
                 <div class="row">
                     <div class="small-12 columns">
@@ -48,11 +50,13 @@
                                 <img src="images/logos/corridor.svg" alt="Corridor" />
                             </a>
                         </div>
+                        <div class="menu"><a href=""><span class="icon"></span></a></div>
                         <nav>
                             <ul>
                                 <li><a href="">Apartments</a></li>
                                 <li><a href="">About Us</a></li>
                                 <li><a href="">Contact Us</a></li>
+                                <li class="hide-for-medium-up show-for-small"><a class="phone" href="">123.456.7890</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -73,35 +77,35 @@
                 </p>
             </div>
             <div class="next-section">
-                <a class="title" href=""><span>Search For Your New Home</span></a>
-                <a class="arrow" href="">Down</a>
+                <a class="title" href="#map"><span>Search For Your New Home</span></a>
+                <a class="arrow" href="#map">Down</a>
             </div>
         </section>
 
-        <section class="block-map">
-            <div class="map-search">
-                <h5>Search By Map</h5>
-                <input type="radio" name="" value="" id="">Apartments<br />
-                <input type="radio" name="" value="" id="">Student Housing<br />
-                <input type="radio" name="" value="" id="">Vacation Rentals
+        <section class="block-map" id="map">
+            <div class="row">
+                <div class="map-search">
+                    <h5>Search By Map</h5>
+                    <input type="radio" name="" value="" id="">Apartments<br />
+                    <input type="radio" name="" value="" id="">Student Housing<br />
+                    <input type="radio" name="" value="" id="">Vacation Rentals
 
-                <label>State
-                    <select>
-                      <option value="">All Locations</option>
-                    </select>
-                </label>
+                    <label>State
+                        <select>
+                          <option value="">All Locations</option>
+                        </select>
+                    </label>
 
-                <label>Search
-                    <input type="text" placeholder="City, Zip, Property Name" />
-                </label>
+                    <label>Search
+                        <input type="text" placeholder="City, Zip, Property Name" />
+                    </label>
 
-                <input type="submit" value="Search" class="button"/>
-
-
-
-
+                    <input type="submit" value="Search" class="button"/>
+                </div>
             </div>
           <!--  TODO: MAP -->
+
+          <div id="area_map"></div>
         </section>
 
 
@@ -114,9 +118,9 @@
                                 <span>LIVE</span>
                                 WHERE YOU LEARN
                             </h3>
-                            <p class="text-uppercase text-bold">
+                            <h6>
                                 CORRIDOR STUDENT HOUSING
-                            </p>
+                            </h6>
                             <p>
                                 Selling copy about student housing. oluptisque dolumquas aut harcilia quiscipidia voluptatia que conest, veles dolumet
                             </p>
@@ -131,9 +135,9 @@
                                 LIVE WHERE YOU
                                 <span>LOVE</span>
                             </h3>
-                            <p class="text-uppercase text-bold">
+                            <h6>
                                 CORRIDOR APARTMENTS
-                            </p>
+                            </h6>
                             <p>
                                 Selling copy about student housing. oluptisque dolumquas aut harcilia quiscipidia voluptatia que conest, veles dolumet
                             </p>
@@ -276,8 +280,10 @@
         <script src="vendor/jquery/dist/jquery.min.js"></script>
         <script src="vendor/jquery-migrate/jquery-migrate.min.js"></script>
         <script src="vendor/foundation/js/foundation.min.js"></script>
-        <script src="vendor/slick-carousel/slick/slick.min.js"></script>
+        <script src="vendor/jquery-placeholder/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script src="js/main.js"></script>
+        <script src="js/map-temp.js"></script>
 
     </body>
 </html>

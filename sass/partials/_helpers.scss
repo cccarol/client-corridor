@@ -88,7 +88,7 @@ and (max-device-width : 1024px) {
     } 
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
     .hide-for-small {
         display: none !important;
     }
@@ -98,7 +98,7 @@ and (max-device-width : 1024px) {
     }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
 
     .show-for-medium-up {
         display: block !important;
